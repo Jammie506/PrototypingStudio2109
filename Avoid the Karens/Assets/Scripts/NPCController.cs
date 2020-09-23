@@ -29,7 +29,7 @@ public class NPCController : MonoBehaviour {
         agent.destination = points[destPoint].position;
 
         // Picks the next location, restarting the loop is the end is reached
-        destPoint = (destPoint + 1) % points.Length;
+        destPoint = (Random.Range(0, points.Length)) % points.Length;
     }
 
 
