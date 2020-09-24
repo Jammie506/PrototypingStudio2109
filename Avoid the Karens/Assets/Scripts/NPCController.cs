@@ -8,18 +8,15 @@ public class NPCController : MonoBehaviour {
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
-    float dist = Vector3.Dist(object.positon, player.position);
-    private float minDist = = 2;
-    
 
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        
 
         // Disable to make NPC move constantly
         agent.autoBraking = false;
 
         GotoNextPoint();
+        //OnCollisionEnter();
     }
 
 
@@ -35,13 +32,27 @@ public class NPCController : MonoBehaviour {
         destPoint = (Random.Range(0, points.Length)) % points.Length;
     }
 
-
     void Update () {
         // Choose the next destination point when the agent gets
         // close to the current one.
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
+    }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        if (collision.gameObject.name == "Jeff")
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+            Debug.Log("Do something here");
+        }
 
-        float dist = Vector3.Dist(object.positon, player.position);
+        //Check for a match with the specific tag on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "Player")
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            Debug.Log("Do something else here");
+        }
     }
 }
