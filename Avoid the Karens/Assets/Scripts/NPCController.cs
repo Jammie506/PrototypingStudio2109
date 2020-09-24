@@ -39,20 +39,11 @@ public class NPCController : MonoBehaviour {
             GotoNextPoint();
     }
     
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision col)
     {
-        //Check for a match with the specified name on any GameObject that collides with your GameObject
-        if (collision.gameObject.name == "Jeff")
+        if (col.gameObject.tag == "Player")
         {
-            //If the GameObject's name matches the one you suggest, output this message in the console
-            Debug.Log("Do something here");
-        }
-
-        //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "Player")
-        {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Do something else here");
+            Debug.Log("Hi");
         }
     }
 }
