@@ -8,10 +8,13 @@ public class NPCController : MonoBehaviour {
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
-
+    float dist = Vector3.Dist(object.positon, player.position);
+    private float minDist = = 2;
+    
 
     void Start () {
         agent = GetComponent<NavMeshAgent>();
+        
 
         // Disable to make NPC move constantly
         agent.autoBraking = false;
@@ -38,5 +41,7 @@ public class NPCController : MonoBehaviour {
         // close to the current one.
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
+
+        float dist = Vector3.Dist(object.positon, player.position);
     }
 }
