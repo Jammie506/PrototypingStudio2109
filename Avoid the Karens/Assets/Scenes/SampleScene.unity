@@ -1366,7 +1366,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e01cef804ac9e4d9728e2a5ba44b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Infection: {fileID: 1511871505}
   EnemyRadius: 3
+  InfectionAmount: 0
+  DecreaseAmount: 5
+  InfectionIncreaseAmount: 5
+  healthbar: {fileID: 932987675}
+  HealthAmount: 0
+  HealthDecreaseAmount: 1
 --- !u!1 &932987673
 GameObject:
   m_ObjectHideFlags: 0
