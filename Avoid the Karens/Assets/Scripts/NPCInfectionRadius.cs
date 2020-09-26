@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NPCInfectionRadius : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class NPCInfectionRadius : MonoBehaviour
    // public  float maxHealth = 100f;
     //public static float health;
     public  float HealthAmount = 0;
-    public float HealthDecreaseAmount = 1;
+    public float HealthDecreaseAmount = 10;
 
 
     // Start is called before the first frame update
@@ -57,7 +58,7 @@ public class NPCInfectionRadius : MonoBehaviour
         else if (distance >= EnemyRadius)
         {
             InfectionAmount -= DecreaseAmount * Time.deltaTime;
-            InfectionAmount = Mathf.Clamp(InfectionAmount, 0f, InfectionLeast);
+            InfectionAmount = Mathf.Clamp(InfectionAmount, 0f, InfectionMax);
             Infection.fillAmount = InfectionAmount / InfectionMax;
         }
 
@@ -66,6 +67,11 @@ public class NPCInfectionRadius : MonoBehaviour
             HealthAmount -= HealthDecreaseAmount * Time.deltaTime;
             //healthbar.fillAmount = health / maxHealth;
             healthbar.fillAmount = HealthAmount / maxHealth;
+        }
+
+        if(HealthAmount <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
         }
     }
 

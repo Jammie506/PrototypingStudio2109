@@ -1332,8 +1332,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925504158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.145, z: 0}
+  m_LocalScale: {x: 1, y: 1.2903619, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1373,7 +1373,7 @@ MonoBehaviour:
   InfectionIncreaseAmount: 5
   healthbar: {fileID: 932987675}
   HealthAmount: 0
-  HealthDecreaseAmount: 1
+  HealthDecreaseAmount: 10
 --- !u!1 &932987673
 GameObject:
   m_ObjectHideFlags: 0
