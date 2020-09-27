@@ -5,33 +5,54 @@ using UnityEngine;
 
 public class ObjectCollections : MonoBehaviour
 {
-     public bool picked = false;
+    public GameObject Bread;
+    public GameObject Cheese;
     
+    public Interactions interactions;
+    
+    public bool breadPlease = false;
+    public bool cheesePlease = false;
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        /*if (interactions.gotBread)
         {
-            picked = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            picked = false;
-        }
-    }
-
-    private void OnTriggerStay(Collider pickup)
-    {
-        /*if (pickup.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Ready to Collect");
-        }*/
-        if (picked && pickup.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Collected");
-            
             Destroy(gameObject);
         }
         
+        if (interactions.gotCheese)
+        {
+            Destroy(gameObject);
+        }*/
     }
+
+    private void OnTriggerEnter(Collider enter)
+    {
+        if (gameObject == Bread && enter.gameObject.CompareTag("Player") && !breadPlease)
+        {
+            Debug.Log("Entered Bread");
+            breadPlease = true;
+            //Destroy(gameObject);
+        } 
+        else if (gameObject == Cheese && enter.gameObject.CompareTag("Player") && !cheesePlease)
+        {
+            Debug.Log("Entered Cheese");
+            cheesePlease = true;
+            //Destroy(gameObject);
+        }
+    }
+
+    /*private void OnTriggerExit(Collider exit)
+    {
+        if (gameObject == Bread && exit.gameObject.CompareTag("Player") && breadPlease)
+        {
+            Debug.Log("Exited Bread");
+            breadPlease = false;
+        }
+        else if (gameObject == Cheese && exit.gameObject.CompareTag("Player") && cheesePlease)
+        {
+            Debug.Log("Exited Cheese");
+            cheesePlease = false;
+        }
+    }*/
 }
