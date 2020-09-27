@@ -6,22 +6,15 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     Text text;
-  
     public static float CoinAmount;
 
-    // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<Text>();
- 
-
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.text = CoinAmount.ToString();
-     
     }
 }
