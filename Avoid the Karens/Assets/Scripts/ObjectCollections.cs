@@ -2,57 +2,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectCollections : MonoBehaviour
 {
-    public GameObject Bread;
-    public GameObject Cheese;
+    public GameObject Shelf;
     
-    public Interactions interactions;
-    
-    public bool breadPlease = false;
-    public bool cheesePlease = false;
+    public Image BreadCross;
+    public Image CheeseCross;
 
-    private void Update()
-    {
-        /*if (interactions.gotBread)
-        {
-            Destroy(gameObject);
-        }
-        
-        if (interactions.gotCheese)
-        {
-            Destroy(gameObject);
-        }*/
-    }
+    public Interactions interBread;
+    public Interactions interCheese;
 
-    private void OnTriggerEnter(Collider enter)
+    private void OnTriggerStay(Collider shelf)
     {
-        if (gameObject == Bread && enter.gameObject.CompareTag("Player") && !breadPlease)
-        {
-            Debug.Log("Entered Bread");
-            breadPlease = true;
+        if (shelf.gameObject.CompareTag("Player") && interBread.picked && gameObject == Shelf && interBread.gotBread)
+        { 
+            Debug.Log("Dropped");
+            Score.CoinAmount += 1;
+            interBread.gotBread = false;
+            BreadCross.gameObject.SetActive(true);
             //Destroy(gameObject);
         } 
-        else if (gameObject == Cheese && enter.gameObject.CompareTag("Player") && !cheesePlease)
-        {
-            Debug.Log("Entered Cheese");
-            cheesePlease = true;
+        else if (shelf.gameObject.CompareTag("Player") && interCheese.picked && gameObject == Shelf && interCheese.gotCheese)
+        { 
+            Debug.Log("Dropped");
+            Score.CoinAmount += 2;
+            interCheese.gotCheese = false;
+            CheeseCross.gameObject.SetActive(true);
             //Destroy(gameObject);
         }
     }
-
-    /*private void OnTriggerExit(Collider exit)
-    {
-        if (gameObject == Bread && exit.gameObject.CompareTag("Player") && breadPlease)
-        {
-            Debug.Log("Exited Bread");
-            breadPlease = false;
-        }
-        else if (gameObject == Cheese && exit.gameObject.CompareTag("Player") && cheesePlease)
-        {
-            Debug.Log("Exited Cheese");
-            cheesePlease = false;
-        }
-    }*/
 }

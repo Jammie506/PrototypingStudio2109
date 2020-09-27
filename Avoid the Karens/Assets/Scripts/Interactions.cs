@@ -8,8 +8,11 @@ public class Interactions : MonoBehaviour
 {
     public GameObject Bread;
     public GameObject Cheese;
+    public GameObject Shelf;
+    
     public Renderer bRend;
     public Renderer cRend;
+    
     public Image BreadCross;
     public Image CheeseCross;
 
@@ -42,32 +45,20 @@ public class Interactions : MonoBehaviour
         if (enter.gameObject.CompareTag("Player") && picked && gameObject == Bread && !gotBread)
         {
             Debug.Log("Transferred");
-                Score.CoinAmount += 1;
+                //Score.CoinAmount += 1;
                 gotBread = true;
-                BreadCross.gameObject.SetActive(true);
+                //BreadCross.gameObject.SetActive(true);
                 bRend.enabled = false;
                 //Destroy(gameObject);
         }
         else if (enter.gameObject.CompareTag("Player") && picked && gameObject == Cheese && !gotCheese)
         {
             Debug.Log("Transferred");
-                Score.CoinAmount += 2;
+                //Score.CoinAmount += 2;
                 gotCheese = true;
-                CheeseCross.gameObject.SetActive(true);
+                //CheeseCross.gameObject.SetActive(true);
                 cRend.enabled = false;
                 //Destroy(gameObject);
-        }
+        } 
     }
-
-    /*public void OnTriggerEnter(Collider drops)
-    {
-        if (gameObject == Bread && picked && gameObject.CompareTag("Player"))
-        { 
-            Debug.Log("Dropped");
-            Score.CoinAmount += 1;
-            gotBread = false;
-            BreadCross.gameObject.SetActive(true);
-            Destroy(gameObject);
-        }
-    }*/
 }
