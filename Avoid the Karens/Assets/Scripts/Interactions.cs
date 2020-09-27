@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class Interactions : MonoBehaviour
 {
-    public ObjectCollections objectBread;
-    public ObjectCollections objectCheese;
-    
     public GameObject Bread;
     public GameObject Cheese;
     public Image BreadCross;
@@ -20,7 +17,6 @@ public class Interactions : MonoBehaviour
 
     private void Start()
     {
-        
         BreadCross.gameObject.SetActive(false);
         CheeseCross.gameObject.SetActive(false);
     }
@@ -39,31 +35,23 @@ public class Interactions : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay(Collider pickup)
+    public void OnTriggerStay(Collider enter)
     {
-        if (objectBread.breadPlease)
+        if (enter.gameObject.CompareTag("Player") && picked)
         {
             Debug.Log("Transferred");
-            
-            if (picked)
-            {
                 Score.CoinAmount += 1;
                 gotBread = true;
                 BreadCross.gameObject.SetActive(true);
-                //Destroy(gameObject);
-            }
+                Destroy(gameObject);
         }
-        if (objectCheese.cheesePlease)
+        else if (enter.gameObject.CompareTag("Player") && picked)
         {
             Debug.Log("Transferred");
-            
-            if (picked)
-            {
                 Score.CoinAmount += 2;
                 gotCheese = true;
                 CheeseCross.gameObject.SetActive(true);
-                //Destroy(gameObject);
-            }
+                Destroy(gameObject);
         }
     }
 
