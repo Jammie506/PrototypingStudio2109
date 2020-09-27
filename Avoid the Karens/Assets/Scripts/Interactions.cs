@@ -8,6 +8,8 @@ public class Interactions : MonoBehaviour
 {
     public GameObject Bread;
     public GameObject Cheese;
+    public Renderer bRend;
+    public Renderer cRend;
     public Image BreadCross;
     public Image CheeseCross;
 
@@ -37,21 +39,23 @@ public class Interactions : MonoBehaviour
 
     public void OnTriggerStay(Collider enter)
     {
-        if (enter.gameObject.CompareTag("Player") && picked)
+        if (enter.gameObject.CompareTag("Player") && picked && gameObject == Bread && !gotBread)
         {
             Debug.Log("Transferred");
                 Score.CoinAmount += 1;
                 gotBread = true;
                 BreadCross.gameObject.SetActive(true);
-                Destroy(gameObject);
+                bRend.enabled = false;
+                //Destroy(gameObject);
         }
-        else if (enter.gameObject.CompareTag("Player") && picked)
+        else if (enter.gameObject.CompareTag("Player") && picked && gameObject == Cheese && !gotCheese)
         {
             Debug.Log("Transferred");
                 Score.CoinAmount += 2;
                 gotCheese = true;
                 CheeseCross.gameObject.SetActive(true);
-                Destroy(gameObject);
+                cRend.enabled = false;
+                //Destroy(gameObject);
         }
     }
 
