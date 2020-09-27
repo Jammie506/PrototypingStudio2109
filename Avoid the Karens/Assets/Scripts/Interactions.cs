@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,50 +8,44 @@ public class Interactions : MonoBehaviour
 {
     public GameObject Bread;
     public GameObject Cheese;
-
+    public Image BreadCross;
+    public Image CheeseCross;
+    
     public bool picked;
 
-    /*public Image bread;
-    public Image peas;
-    public Image carrots;
-    public bool imageOff =  false;*/
-    
-    void Start()
+    private void Start()
     {
-        
-        /*bread.gameObject.SetActive(false); 
-        peas.gameObject.SetActive(false);
-        carrots.gameObject.SetActive(false);*/
+        BreadCross.gameObject.SetActive(false);
+        CheeseCross.gameObject.SetActive(false);
     }
-    
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
             picked = true;
+            
         }
-
-        if (Input.GetKeyUp(KeyCode.E))
+        else
         {
             picked = false;
         }
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerStay(Collider pickup)
     {
-        if (gameObject == Bread && picked)
+        if (gameObject == Bread && picked && pickup.gameObject.CompareTag("Player"))
         { 
             Debug.Log("Collected");
             Score.CoinAmount += 1;
+            BreadCross.gameObject.SetActive(true);
             Destroy(gameObject);
         }
-
-        else
-       
-        if (gameObject == Cheese && picked)
+        if (gameObject == Cheese && picked && pickup.gameObject.CompareTag("Player"))
         {
             Debug.Log("Collected");
             Score.CoinAmount += 2;
+            CheeseCross.gameObject.SetActive(true);
             Destroy(gameObject);
         }
     }
