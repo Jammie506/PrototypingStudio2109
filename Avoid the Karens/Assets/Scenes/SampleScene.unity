@@ -1370,10 +1370,10 @@ MonoBehaviour:
   EnemyRadius: 3
   InfectionAmount: 0
   DecreaseAmount: 5
-  InfectionIncreaseAmount: 5
+  InfectionIncreaseAmount: 10
   healthbar: {fileID: 932987675}
   HealthAmount: 0
-  HealthDecreaseAmount: 10
+  HealthDecreaseAmount: 15
 --- !u!1 &932987673
 GameObject:
   m_ObjectHideFlags: 0
