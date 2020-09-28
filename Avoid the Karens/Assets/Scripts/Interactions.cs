@@ -8,24 +8,28 @@ public class Interactions : MonoBehaviour
 {
     public GameObject Bread;
     public GameObject Cheese;
-    public GameObject Shelf;
+    
+    public ObjectCollections Shelf;
     
     public Renderer bRend;
     public Renderer cRend;
     
-    public Image BreadCross;
-    public Image CheeseCross;
+    public Image breadHigh;
+    public Image cheeseHigh;
 
     public bool picked;
-    public bool gotBread = false;
-    public bool gotCheese = false;
+    public bool gotBread;
+    public bool gotCheese;
 
     private void Start()
     {
-        BreadCross.gameObject.SetActive(false);
-        CheeseCross.gameObject.SetActive(false);
-    }
+        breadHigh.gameObject.SetActive(false);
+        cheeseHigh.gameObject.SetActive(false);
 
+        gotBread = false;
+        gotCheese = false;
+    }
+    
     void Update()
     {
         if (Input.GetKey(KeyCode.E))
@@ -38,27 +42,33 @@ public class Interactions : MonoBehaviour
         {
             picked = false;
         }
-    }
 
+        if (Shelf.droppedBread && gameObject == Bread)
+        {
+            breadHigh.gameObject.SetActive(false);
+        }
+        else if (Shelf.droppedCheese && gameObject == Cheese)
+        {
+            cheeseHigh.gameObject.SetActive(false);
+        }
+    }
+    
+    //this is where items are collected, they are dropped in ObjectCollections
     public void OnTriggerStay(Collider enter)
     {
         if (enter.gameObject.CompareTag("Player") && picked && gameObject == Bread && !gotBread)
         {
             Debug.Log("Transferred");
-                //Score.CoinAmount += 1;
                 gotBread = true;
-                //BreadCross.gameObject.SetActive(true);
                 bRend.enabled = false;
-                //Destroy(gameObject);
+                breadHigh.gameObject.SetActive(true);
         }
         else if (enter.gameObject.CompareTag("Player") && picked && gameObject == Cheese && !gotCheese)
         {
             Debug.Log("Transferred");
-                //Score.CoinAmount += 2;
                 gotCheese = true;
-                //CheeseCross.gameObject.SetActive(true);
                 cRend.enabled = false;
-                //Destroy(gameObject);
+                cheeseHigh.gameObject.SetActive(true);
         } 
     }
 }
