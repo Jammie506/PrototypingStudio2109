@@ -31,35 +31,54 @@ public class UITimer : MonoBehaviour
     void Update ()
     {
         //isSick = Collisions.sick;
-        
-        if (timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-        }
 
-        if (timeRemaining > 0 && Ron.sick == true)
+        if (infect < 1)
         {
-            timeRemaining -= (Time.deltaTime) * 10;
-            currentInfect += 0.5f;
-        }
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+
+            if (timeRemaining > 0 && Ron.sick == true)
+            {
+                timeRemaining -= (Time.deltaTime) * 10;
+                currentInfect += 0.5f;
+            }
         
-        if (timeRemaining > 0 && Jeff.sick == true)
-        {
-            timeRemaining -= (Time.deltaTime) * 10;
-            currentInfect += 0.5f;
-        }
+            if (timeRemaining > 0 && Jeff.sick == true)
+            {
+                timeRemaining -= (Time.deltaTime) * 10;
+                currentInfect += 0.5f;
+            }
         
-        if(playing == true)
-        {
-            timerText.text = timeRemaining.ToString("00");
-        }
+            if(playing == true)
+            {
+                timerText.text = timeRemaining.ToString("00");
+            }
          
-        infect = currentInfect / maxInfect; 
-        Debug.Log(infect);
-        infectBar.fillAmount = infect;
-
-        if (infect == 1)
+            infect = currentInfect / maxInfect; 
+            Debug.Log(infect);
+            infectBar.fillAmount = infect;
+        }
+        else if (infect == 1)
         {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+
+            if (timeRemaining > 0 && Ron.sick == true)
+            {
+                timeRemaining -= (Time.deltaTime) * 10;
+                currentHealth -= 0.5f;
+            }
+        
+            if (timeRemaining > 0 && Jeff.sick == true)
+            {
+                timeRemaining -= (Time.deltaTime) * 10;
+                currentHealth -= 0.5f;
+            }
+            
             health = currentHealth / maxHealth;
             //Debug.Log(health);               
             healthBar.fillAmount = health;
