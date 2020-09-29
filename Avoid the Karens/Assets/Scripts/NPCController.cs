@@ -18,7 +18,7 @@ public class NPCController : MonoBehaviour {
     public LayerMask targetMask;
     public LayerMask obsticleMask;
     public bool See = false;
-
+    // infection rate and health
     public Image Infection;
 
     public float enemyRadius = 10f;
@@ -102,7 +102,7 @@ public class NPCController : MonoBehaviour {
         {
             HealthAmount -= HealthDecreaseAmount * Time.deltaTime;
             //healthbar.fillAmount = health / maxHealth;
-            //healthbar.fillAmount = HealthAmount / maxHealth;
+            healthbar.fillAmount = HealthAmount / maxHealth;
         }
 
         if(HealthAmount <= 0)

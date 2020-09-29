@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 740539383}
   - component: {fileID: 740539382}
   m_Layer: 5
-  m_Name: HealthBarBG (1)
+  m_Name: 'HealthBarBG '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 757492658}
   - component: {fileID: 757492657}
   m_Layer: 5
-  m_Name: HealthBarFill
+  m_Name: InfectionBarFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1306,7 +1306,7 @@ GameObject:
   - component: {fileID: 1243860451}
   - component: {fileID: 1243860450}
   m_Layer: 5
-  m_Name: HealthBarBG
+  m_Name: InfectionBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2282,12 +2282,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   See: 0
-  Infection: {fileID: 0}
+  Infection: {fileID: 757492657}
   enemyRadius: 10
   infectionAmount: 0
   decreaseAmount: 5
-  infectionIncreaseAmount: 5
-  healthbar: {fileID: 757492657}
+  infectionIncreaseAmount: 10
+  healthbar: {fileID: 852592900}
   HealthAmount: 0
   HealthDecreaseAmount: 10
   timer: {fileID: 1524094333}
@@ -2423,7 +2423,6 @@ GameObject:
   - component: {fileID: 1666585694}
   - component: {fileID: 1666585693}
   - component: {fileID: 1666585692}
-  - component: {fileID: 1666585695}
   m_Layer: 0
   m_Name: Ron
   m_TagString: Untagged
@@ -2536,12 +2535,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   See: 0
-  Infection: {fileID: 0}
-  enemyRadius: 3
+  Infection: {fileID: 757492657}
+  enemyRadius: 4
   infectionAmount: 0
   decreaseAmount: 5
-  infectionIncreaseAmount: 5
-  healthbar: {fileID: 1243860450}
+  infectionIncreaseAmount: 10
+  healthbar: {fileID: 852592900}
   HealthAmount: 0
   HealthDecreaseAmount: 10
   timer: {fileID: 1524094333}
@@ -2583,26 +2582,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &1666585695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666585687}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e01cef804ac9e4d9728e2a5ba44b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Infection: {fileID: 1243860450}
-  EnemyRadius: 2.5
-  InfectionAmount: 0
-  DecreaseAmount: 5
-  InfectionIncreaseAmount: 5
-  healthbar: {fileID: 0}
-  HealthAmount: 0
-  HealthDecreaseAmount: 10
 --- !u!1 &1741375069
 GameObject:
   m_ObjectHideFlags: 0
