@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 
 public class NPCController : MonoBehaviour {
@@ -16,6 +19,25 @@ public class NPCController : MonoBehaviour {
     public LayerMask obsticleMask;
     public bool See = false;
 
+    public Image Infection;
+
+    public float enemyRadius = 10f;
+    Transform playerTarget;
+
+    public const int InfectionMax = 100;
+    public const int InfectionLeast = 0;
+    public float infectionAmount =0;
+    public float decreaseAmount =5;
+    public float infectionIncreaseAmount = 5;
+
+    public Image healthbar;
+    public const int maxHealth = 100;
+    
+    public  float HealthAmount = 0;
+    public float HealthDecreaseAmount = 10;
+
+    public UITimer timer;
+    
     IEnumerator FindTargetsWithDelay(float delay)
     {
         while (true)
@@ -35,6 +57,10 @@ public class NPCController : MonoBehaviour {
         //OnCollisionEnter();
 
         StartCoroutine("FindTargetsWithDelay", .2f);
+        
+        playerTarget = PlayerManager.instance.player.transform;
+        //healthbar = GetComponent<Image>();
+        HealthAmount = maxHealth;
     }
     
     void GotoNextPoint() {
@@ -54,6 +80,35 @@ public class NPCController : MonoBehaviour {
         // close to the current one.
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
             GotoNextPoint();
+        
+        
+        float distance = Vector3.Distance(playerTarget.position, transform.position);
+        if(distance <= enemyRadius)
+        {
+            // infec.Update();
+            infectionAmount += infectionIncreaseAmount * Time.deltaTime;
+            infectionAmount = Mathf.Clamp(infectionAmount, 0f, InfectionMax);
+            // Infection.fillAmount = infec.GetInfecNormalized();
+            Infection.fillAmount = infectionAmount / InfectionMax;
+        }
+        else if (distance >= enemyRadius)
+        {
+            infectionAmount -= decreaseAmount * Time.deltaTime;
+            infectionAmount = Mathf.Clamp(infectionAmount, 0f, InfectionMax);
+            Infection.fillAmount = infectionAmount / InfectionMax;
+        }
+
+        if (infectionAmount >= InfectionMax)
+        {
+            HealthAmount -= HealthDecreaseAmount * Time.deltaTime;
+            //healthbar.fillAmount = health / maxHealth;
+            //healthbar.fillAmount = HealthAmount / maxHealth;
+        }
+
+        if(HealthAmount <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
     }
     
     void OnCollisionEnter(Collision col)
@@ -92,5 +147,11 @@ public class NPCController : MonoBehaviour {
         }
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
         
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position,enemyRadius);
     }
 }

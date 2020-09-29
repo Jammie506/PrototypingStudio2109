@@ -25,30 +25,24 @@ public class NPCInfectionRadius : MonoBehaviour
     public const int maxHealth = 100;
     //public static float health;
 
-   // public  float maxHealth = 100f;
+    //public  float maxHealth = 100f;
     //public static float health;
     public  float HealthAmount = 0;
     public float HealthDecreaseAmount = 10;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         playerTarget = PlayerManager.instance.player.transform;
         //healthbar = GetComponent<Image>();
         HealthAmount = maxHealth;
-      
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-
         float distance = Vector3.Distance(playerTarget.position, transform.position);
         if(distance <= EnemyRadius)
         {
-
             // infec.Update();
             InfectionAmount += InfectionIncreaseAmount * Time.deltaTime;
             InfectionAmount = Mathf.Clamp(InfectionAmount, 0f, InfectionMax);
