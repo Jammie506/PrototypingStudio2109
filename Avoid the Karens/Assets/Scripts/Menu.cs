@@ -30,7 +30,7 @@ public class Menu : MonoBehaviour
 
         if (InfectionAmount >= InfectionMax)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Game Level");
         }
     }
 
