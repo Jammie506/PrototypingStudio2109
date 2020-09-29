@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -32,8 +33,11 @@ public class UITimer : MonoBehaviour
     {
         //isSick = Collisions.sick;
 
-        if (infect < 1)
+        if (currentInfect <= maxInfect)
         {
+            infect = currentInfect / maxInfect;
+            infectBar.fillAmount = infect;
+            
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
@@ -43,25 +47,28 @@ public class UITimer : MonoBehaviour
             {
                 timeRemaining -= (Time.deltaTime) * 10;
                 currentInfect += 0.5f;
+                infectBar.fillAmount = infect;
             }
         
             if (timeRemaining > 0 && Jeff.sick == true)
             {
                 timeRemaining -= (Time.deltaTime) * 10;
                 currentInfect += 0.5f;
+                infectBar.fillAmount = infect;
             }
         
             if(playing == true)
             {
                 timerText.text = timeRemaining.ToString("00");
             }
-         
-            infect = currentInfect / maxInfect; 
-            Debug.Log(infect);
             infectBar.fillAmount = infect;
         }
-        else if (infect == 1)
+        
+        if (currentInfect >= maxInfect)
         {
+
+            infectBar.fillAmount = infect;
+            
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
@@ -82,6 +89,11 @@ public class UITimer : MonoBehaviour
             health = currentHealth / maxHealth;
             //Debug.Log(health);               
             healthBar.fillAmount = health;
+        }
+        
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
         }
     }
 
