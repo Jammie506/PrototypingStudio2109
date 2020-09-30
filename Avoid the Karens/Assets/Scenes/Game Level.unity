@@ -433,6 +433,17 @@ Transform:
   m_Father: {fileID: 1680713920}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115980831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8836236287087001017, guid: 00ab0c5b201c32749b8d3793bda95c0a, type: 3}
+  m_PrefabInstance: {fileID: 129898016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &129898016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2131,6 +2142,10 @@ PrefabInstance:
       propertyPath: breadHigh
       value: 
       objectReference: {fileID: 1265422069}
+    - target: {fileID: 993774609687465930, guid: e8456a871a81ea448ad1ef0647a07012, type: 3}
+      propertyPath: shelf
+      value: 
+      objectReference: {fileID: 3936484052464154030}
     - target: {fileID: 993774609687465932, guid: e8456a871a81ea448ad1ef0647a07012, type: 3}
       propertyPath: m_Size.x
       value: 8.540903
@@ -2298,6 +2313,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 993774609687465929, guid: e8456a871a81ea448ad1ef0647a07012, type: 3}
   m_PrefabInstance: {fileID: 466580144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &489763342 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 993774609687465930, guid: e8456a871a81ea448ad1ef0647a07012, type: 3}
+  m_PrefabInstance: {fileID: 466580144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489763341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8430835434546ecb22669d01337341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &489763344 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 993774609687465933, guid: e8456a871a81ea448ad1ef0647a07012, type: 3}
@@ -6054,6 +6080,10 @@ PrefabInstance:
       propertyPath: on
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7086848578627415406, guid: 57e744e31445cc645be738a0c00e9d61, type: 3}
+      propertyPath: shelf
+      value: 
+      objectReference: {fileID: 5647224100578728019}
     - target: {fileID: 7086848578627415407, guid: 57e744e31445cc645be738a0c00e9d61, type: 3}
       propertyPath: m_Size.x
       value: 10.2683525
@@ -8345,6 +8375,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7086848578627415401, guid: 57e744e31445cc645be738a0c00e9d61, type: 3}
   m_PrefabInstance: {fileID: 1342702985}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707330910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7086848578627415406, guid: 57e744e31445cc645be738a0c00e9d61, type: 3}
+  m_PrefabInstance: {fileID: 1342702985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707330909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8430835434546ecb22669d01337341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1707330912 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7086848578627415404, guid: 57e744e31445cc645be738a0c00e9d61, type: 3}
@@ -8965,6 +9006,17 @@ Transform:
   m_Father: {fileID: 2103486679}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823438458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8836236287060716599, guid: 00ab0c5b201c32749b8d3793bda95c0a, type: 3}
+  m_PrefabInstance: {fileID: 129898016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1841707179
 GameObject:
   m_ObjectHideFlags: 0
@@ -9738,6 +9790,17 @@ Transform:
   m_Father: {fileID: 69614517}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1914560217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8836236287262314194, guid: 00ab0c5b201c32749b8d3793bda95c0a, type: 3}
+  m_PrefabInstance: {fileID: 129898016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1944501597 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8836236287395035100, guid: 00ab0c5b201c32749b8d3793bda95c0a, type: 3}
@@ -19010,6 +19073,8 @@ GameObject:
   - component: {fileID: 7287692600244067174}
   - component: {fileID: 7451015535554199246}
   - component: {fileID: 1798688934782841504}
+  - component: {fileID: 1798688934782841506}
+  - component: {fileID: 1798688934782841505}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -19030,6 +19095,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.2, y: 10.4, z: 6.199999}
   m_Center: {x: 45.4, y: 6.2, z: 28.8}
+--- !u!114 &1798688934782841505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798688934782841503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 1798688934782841503}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &1798688934782841506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798688934782841503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 12.67038}
+  m_Center: {x: 45.4, y: 6.2, z: 28.857422}
 --- !u!23 &1799015357379453673
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21269,6 +21368,8 @@ GameObject:
   - component: {fileID: 1301661916090372893}
   - component: {fileID: 2998527614337407983}
   - component: {fileID: 2307117548899468547}
+  - component: {fileID: 2307117548899468549}
+  - component: {fileID: 2307117548899468548}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -21289,6 +21390,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.2, y: 10.4, z: 2.347374}
   m_Center: {x: 30.4, y: 6.2, z: -49.273685}
+--- !u!114 &2307117548899468548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307117548899468546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 2307117548899468546}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &2307117548899468549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307117548899468546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.2, y: 10.4, z: 3.1303596}
+  m_Center: {x: 30.4, y: 6.2, z: -46.875565}
 --- !u!23 &2314169794161774023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23694,6 +23829,8 @@ GameObject:
   - component: {fileID: 4438460189520790417}
   - component: {fileID: 1063615343289135342}
   - component: {fileID: 2799972748199140486}
+  - component: {fileID: 2799972748199140488}
+  - component: {fileID: 2799972748199140487}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -23714,6 +23851,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8757324, y: 10.4, z: 40.2}
   m_Center: {x: 143.23785, y: 6.2, z: 27.300001}
+--- !u!114 &2799972748199140487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799972748199140485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 2799972748199140485}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &2799972748199140488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799972748199140485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.167465, y: 10.4, z: 40.2}
+  m_Center: {x: 141.10837, y: 6.2, z: 27.300001}
 --- !u!4 &2816870884964657434
 Transform:
   m_ObjectHideFlags: 0
@@ -24425,6 +24596,8 @@ GameObject:
   - component: {fileID: 6686843334965784053}
   - component: {fileID: 4940272349867255882}
   - component: {fileID: 2968607863805218473}
+  - component: {fileID: 2968607863805218475}
+  - component: {fileID: 2968607863805218474}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -24445,6 +24618,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.2, y: 10.4, z: 6.199999}
   m_Center: {x: 45.4, y: 6.2, z: -31.2}
+--- !u!114 &2968607863805218474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968607863805218472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 2968607863805218472}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &2968607863805218475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968607863805218472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 11.780945}
+  m_Center: {x: 45.4, y: 6.2, z: -31.327126}
 --- !u!1 &2977187344181195703
 GameObject:
   m_ObjectHideFlags: 0
@@ -28217,6 +28424,8 @@ GameObject:
   - component: {fileID: 2760633945872065870}
   - component: {fileID: 6538646755153463577}
   - component: {fileID: 3936484052464154029}
+  - component: {fileID: 3936484052464154031}
+  - component: {fileID: 3936484052464154030}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -28237,6 +28446,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 79.899994, y: 10.4, z: 1.9590111}
   m_Center: {x: 105.25, y: 6.2, z: -49.079506}
+--- !u!114 &3936484052464154030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936484052464154028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 3936484052464154028}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &3936484052464154031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936484052464154028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 79.899994, y: 10.4, z: 2.7481537}
+  m_Center: {x: 105.25, y: 6.2, z: -46.978287}
 --- !u!1 &3936916585691414133
 GameObject:
   m_ObjectHideFlags: 0
@@ -35288,6 +35531,8 @@ GameObject:
   - component: {fileID: 5776435423876163401}
   - component: {fileID: 3173164629159955805}
   - component: {fileID: 5647224100578728018}
+  - component: {fileID: 5647224100578728020}
+  - component: {fileID: 5647224100578728019}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -35308,6 +35553,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.2, y: 10.4, z: 6.2}
   m_Center: {x: 45.4, y: 6.2, z: 8.799999}
+--- !u!114 &5647224100578728019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647224100578728017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 5647224100578728017}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &5647224100578728020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647224100578728017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 11.12233}
+  m_Center: {x: 45.4, y: 6.2, z: 8.971611}
 --- !u!23 &5647448280104497920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37924,6 +38203,7 @@ GameObject:
   - component: {fileID: 9180083357981311783}
   - component: {fileID: 6230046158291088652}
   - component: {fileID: 6230046158291088651}
+  - component: {fileID: 6230046158291088653}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -37939,11 +38219,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6230046158291088650}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 40.199997, y: 10.4, z: 6.199999}
-  m_Center: {x: 99.9, y: 6.2, z: 28.8}
+  m_Size: {x: 40.199997, y: 10.4, z: 10.003006}
+  m_Center: {x: 99.9, y: 6.2, z: 29.180504}
 --- !u!65 &6230046158291088652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37957,6 +38237,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.199997, y: 10.4, z: 6.199999}
   m_Center: {x: 99.9, y: 6.2, z: 28.8}
+--- !u!114 &6230046158291088653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230046158291088650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 6230046158291088650}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
 --- !u!23 &6232924962959038323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41927,6 +42228,8 @@ GameObject:
   - component: {fileID: 5133602353041665117}
   - component: {fileID: 3423598211616566436}
   - component: {fileID: 7168099214963826001}
+  - component: {fileID: 7168099214963826003}
+  - component: {fileID: 7168099214963826002}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -41947,6 +42250,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5131073, y: 10.4, z: 40.2}
   m_Center: {x: 143.05655, y: 6.2, z: -21.199999}
+--- !u!114 &7168099214963826002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168099214963826000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 7168099214963826000}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &7168099214963826003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168099214963826000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8571167, y: 10.4, z: 40.2}
+  m_Center: {x: 140.86871, y: 6.2, z: -21.199999}
 --- !u!1 &7169238214965773114
 GameObject:
   m_ObjectHideFlags: 0
@@ -47782,6 +48119,8 @@ GameObject:
   - component: {fileID: 6433490387040948774}
   - component: {fileID: 3653972790046606003}
   - component: {fileID: 8406938198069289113}
+  - component: {fileID: 8406938198069289115}
+  - component: {fileID: 8406938198069289114}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -47802,6 +48141,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.199997, y: 10.4, z: 6.2}
   m_Center: {x: 99.9, y: 6.2, z: 8.799999}
+--- !u!114 &8406938198069289114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406938198069289112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 8406938198069289112}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &8406938198069289115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406938198069289112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 12.08123}
+  m_Center: {x: 99.9, y: 6.2, z: 8.904469}
 --- !u!1 &8407983698112724500
 GameObject:
   m_ObjectHideFlags: 0
@@ -47814,6 +48187,8 @@ GameObject:
   - component: {fileID: 4544729149454203650}
   - component: {fileID: 7549475232057262999}
   - component: {fileID: 8407983698112724501}
+  - component: {fileID: 8407983698112724503}
+  - component: {fileID: 8407983698112724502}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -47832,8 +48207,42 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 40.199997, y: 10.4, z: 6.199999}
-  m_Center: {x: 99.9, y: 6.2, z: -31.2}
+  m_Size: {x: 40.199997, y: 10.4, z: 8.742153}
+  m_Center: {x: 99.9, y: 6.2, z: -29.928923}
+--- !u!114 &8407983698112724502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407983698112724500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 8407983698112724500}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &8407983698112724503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407983698112724500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 9.192375}
+  m_Center: {x: 99.9, y: 6.2, z: -32.696186}
 --- !u!33 &8409165982246132203
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -48453,6 +48862,8 @@ GameObject:
   - component: {fileID: 5573206920694585449}
   - component: {fileID: 4604479462187427678}
   - component: {fileID: 8518595284259380446}
+  - component: {fileID: 8518595284259380448}
+  - component: {fileID: 8518595284259380447}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -48473,6 +48884,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.2, y: 10.4, z: 6.2}
   m_Center: {x: 45.4, y: 6.2, z: -11.200001}
+--- !u!114 &8518595284259380447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8518595284259380445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 8518595284259380445}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &8518595284259380448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8518595284259380445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 11.245346}
+  m_Center: {x: 45.4, y: 6.2, z: -11.02758}
 --- !u!33 &8526596950663509647
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -51629,6 +52074,8 @@ GameObject:
   - component: {fileID: 3802753709338835175}
   - component: {fileID: 5668944091909222402}
   - component: {fileID: 9221993475456688845}
+  - component: {fileID: 9221993475456688847}
+  - component: {fileID: 9221993475456688846}
   m_Layer: 0
   m_Name: Shelving
   m_TagString: Untagged
@@ -51649,6 +52096,40 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.199997, y: 10.4, z: 6.2}
   m_Center: {x: 99.9, y: 6.2, z: -11.200001}
+--- !u!114 &9221993475456688846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221993475456688844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ec0f95362ae4974abb86c1d0a592b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shelf: {fileID: 9221993475456688844}
+  breadCross: {fileID: 1914560217}
+  cheeseCross: {fileID: 1823438458}
+  dropControls: {fileID: 115980831}
+  interBread: {fileID: 1707330910}
+  interCheese: {fileID: 489763342}
+  droppedBread: 0
+  droppedCheese: 0
+  on: 0
+--- !u!65 &9221993475456688847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221993475456688844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.199997, y: 10.4, z: 13.0206375}
+  m_Center: {x: 99.9, y: 6.2, z: -11.410046}
 --- !u!1 &9222441038872719737
 GameObject:
   m_ObjectHideFlags: 0
